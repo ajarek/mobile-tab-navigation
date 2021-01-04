@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b88acb;
+}
+
+.phone {
+    min-width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .35),
+        0px 0px 7px rgba(0, 0, 0, .35),
+        0px 0px 9px rgba(0, 0, 0, .35),
+        0px 0px 12px rgba(0, 0, 0, .35),
+        inset 2px 2px 2px rgba(0, 0, 0, .35);
+}
+
+.ekran {
+    width: 352px;
+    height: 520px;
+    background: url(haus.jpg);
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 4px solid white;
+    transition: 0.4s linear;
+    position: relative;
+}
+
+.ekran img {
+    width: 100%;
+
+}
+
+.parent {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.parent div:hover {
+    color: #b88acb;
+}
+
+@media (max-width:370px) {
+    .phone {
+        min-width: 280px;
+        height: 520px;
+        background-color: white;
+        border-radius: 30px;
+        border: 4px solid white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .35),
+            0px 0px 7px rgba(0, 0, 0, .35),
+            0px 0px 9px rgba(0, 0, 0, .35),
+            0px 0px 12px rgba(0, 0, 0, .35),
+            inset 2px 2px 2px rgba(0, 0, 0, .35);
+    }
+
+    .ekran {
+        width: 272px;
+        height: 440px;
+        background: url(haus.jpg);
+        background-size: cover;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom: 4px solid white;
+        transition: 0.4s linear;
+
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+}
+
+.logo img {
+    width: 25px;
+
+}
